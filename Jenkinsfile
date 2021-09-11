@@ -14,9 +14,9 @@ pipeline {
             }
         }
 		/*stage('Deploy') {
-            steps {
-				deploy adapters: [tomcat9(credentialsId: 'webserver', path: '', url: 'http://localhost:8080/')], contextPath: 'new-deploy-11', war: '**/*.war'
-            }
+            /*steps {
+				deploy adapters: [tomcat9(credentialsId: 'webserver', path: '', url: 'http://localhost:8080/')], contextPath: 'new-deploy-11', war: '**/*.war'*/
+            }*/
         }*/
     }
 }
