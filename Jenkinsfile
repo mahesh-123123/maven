@@ -20,11 +20,11 @@ pipeline {
                 msr''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'mmssrraju123@gmail.com'
             }
         }
-	    /*stage('Deploy') {
-            /*steps {
-				/*(deploy adapters: [tomcat9(credentialsId: 'webserver', path: '', url: 'http://localhost:8080/')], contextPath: 'new-deploy-11', war: '**.war')
+	    stage('Deploy') {
+            steps {
+				deploy adapters: [tomcat9(credentialsId: 'webserver', path: '', url: 'http://localhost:8080/')], contextPath: 'new-deploy-11', war: '**/*.war'
             }
-        }*/
+        }
 		
     }
 }
