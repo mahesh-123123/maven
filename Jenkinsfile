@@ -28,13 +28,13 @@ pipeline {
             }
         }*/
 	
-        stage('slack') {
+        /*stage('slack') {
             steps {
                slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops',
 		       color: 'good', message: 'github, jenkins, slack',
 		       tokenCredentialId: 'slack-demo', username: 'abc-fdf7447'
             }
-        }
+        }*/
 		
     }
 }
