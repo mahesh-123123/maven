@@ -27,7 +27,7 @@ pipeline {
                 msr''', cc: '', from: '', replyTo: '', subject: 'jenkins job', to: 'mmssrraju123@gmail.com'
             }
         }*/
-	    stages {
+	
         stage('slack') {
             steps {
                slackSend baseUrl: 'https://hooks.slack.com/services/', channel: 'devops',
